@@ -15,7 +15,9 @@ Humanize = {
     ordinalize: wrapper(NumberOrdanilize),
     ordinal: wrapper(NumberOrdinal),
     toRoman: wrapper(NumberRomanize),
-    fromRoman: wrapper(NumberUnromanize)
+    fromRoman: wrapper(NumberUnromanize),
+    binarySuffix: wrapper(NumberBinarySuffix),
+    preciseBinarySuffix: wrapper(NumberPreciseBinarySuffix),
   },
   String: {
     humanize: wrapper(StringHumanizer),

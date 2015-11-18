@@ -17,6 +17,8 @@ var load = function (api) {
   api.addFiles('humanizers/number-ordinal.js');
   api.addFiles('humanizers/number-romanize.js');
   api.addFiles('humanizers/number-unromanize.js');
+  api.addFiles('humanizers/number-binary-suffix.js');
+  api.addFiles('humanizers/number-precise-binary-suffix.js');
   api.addFiles('core/humanize.js');
 }
 
