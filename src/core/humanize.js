@@ -4,7 +4,7 @@ var wrapper = function (command) {
     
     args = [null].concat(args)
 
-    var instance = new (Function.bind.apply(command, args));
+    var instance = new (Function.prototype.bind.apply(command, args));
 
     return instance.execute();
   }
