@@ -2,9 +2,14 @@ var wrapper = function (command) {
   return function () {
     var args = Array.prototype.slice.call(arguments);
     
-    args = [null].concat(args)
-
-    var instance = new (Function.prototype.bind.apply(command, args));
+    var instance;
+    function F() {
+        // command returns **this**
+        return command.apply(this, args);
+    }
+    F.prototype = command.prototype;
+    instance = new F();
+    instance.command = command;
 
     return instance.execute();
   }
