@@ -4,6 +4,12 @@
 
 Humanize values to make them readable for regular people
 
+## Installation
+
+```
+meteor add idmontie:humanize
+```
+
 ## Usage
 
 ### String
